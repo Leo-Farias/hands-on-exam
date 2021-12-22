@@ -10,7 +10,7 @@ while (desired_number < 1)
 
 var first_num = 0, second_num = 1;
 var next_num = 0; // Varible to store summ of first and second number
-var fibonnaci_seq = [ first_num ]; // Not adding second value since it will be added in the first loop
+var fibonnaci_seq = [ first_num, second_num ]; // Not adding second value since it will be added in the first loop
 
 // Printing first numbers
 while (next_num < desired_number){   
@@ -25,7 +25,7 @@ while (next_num < desired_number){
 // If value of next_num is different than that means the desired number
 // is not inside the fibbonaci sequence
 if (next_num !== desired_number ) 
-    console.log("Desired number not inside Fibbonaci sequence");
-else
-    console.log("Fibbonaci Sequence: ", fibonnaci_seq.join(" "));
+    fibonnaci_seq.pop();
+
+console.log("Fibbonaci Sequence: ", fibonnaci_seq.join(" "));
 

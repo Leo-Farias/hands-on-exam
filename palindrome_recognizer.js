@@ -5,7 +5,7 @@ const prompt = require('prompt-sync')();
 
 // Asking the user for value to be recognized
 // We need to remove all spaces in order to check the pallindrome
-const input_phrase = prompt("Enter a Phrase: ").replace(/ /g, '');
+const input_phrase = prompt("Enter a Phrase: ").replace(/ /g, '').toLowerCase();
 
 // JS has an array method called "reverse", so first the string must
 // turn into array -> reverve that array -> and join it back to a string
